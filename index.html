@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>وبسایت حسین دهناشی</title>
+</head>
+
+<body>
+
+    <!--Start NavBar-->
+    <header class="bg-gray-200 shadow-md md:flex md:justify-start md:flex-row-reverse md:items-center">
+        <div class="flex justify-between items-center px-4 py-2">
+            <div>
+                <img class="h-10" src="img/Logo.jpg" alt="Lorem Ipsum">
+            </div>
+            <div class="md:hidden">
+                <button onclick="toggleMenu()"
+                    class="text-gray-500 h-6 w-6 focus:text-gray-600 focus:outline-none hover:text-gray-600">
+                    <span id="openBtn"><i class="fas fa-bars fill-current text-2xl"></i></span>
+                    <span id="closeBtn" class="hidden"><i class="fal fa-times fill-current text-2xl"></i></span>
+                </button>
+            </div>
+        </div>
+        <div id="links" class="pt-2 pb-4 md:p-0 md:flex md:mr-5 h-full" dir="rtl">
+            <a href="#"
+                class="block px-5 py-2 mt-1 md:m-0 md:rounded text-yellow-500 font-bold hover:bg-gray-100 sm:inline-block">صحفه
+                اصلی <i class="fas fa-home"></i></a>
+            <a href="#" class="block px-5 py-2 mt-1 md:m-0 md:rounded hover:bg-gray-100 font-bold sm:inline-block">بلاگ
+                <i class="far fa-newspaper"></i></a>
+            <a href="#"
+                class="block px-5 py-2 mt-1 md:m-0 md:rounded hover:bg-gray-100 font-bold sm:inline-block">درباره‌ما <i
+                    class="far fa-address-card"></i></a>
+            <a href="#"
+                class="block px-5 py-2 mt-1 md:m-0 md:rounded hover:bg-gray-100 font-bold sm:inline-block">ارتباط با ما
+                <i class="fas fa-phone"></i></a>
+            <a href="#" class="block px-5 py-2 mt-1 md:m-0 md:rounded hover:bg-gray-100 font-bold sm:inline-block">ورود
+                / ثبت نام <i class="fas fa-sign-in-alt"></i></a>
+        </div>
+    </header>
+    <!--End NavBar-->
+
+    <!--Start Slider-->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide w-full"><img class="w-full object-cover object-center" src="img/slide 1.png"
+                    alt="slide"></div>
+            <div class="swiper-slide w-full"><img class="w-full object-cover object-center" src="img/slide 2.png"
+                    alt="slide"></div>
+            <div class="swiper-slide w-full"><img class="w-full object-cover object-center" src="img/slide 3.png"
+                    alt="slide"></div>
+        </div>
+        <div class="swiper-pagination text-white"></div>
+        <div class="absolute top-56 z-50 w-full flex justify-between items-center px-5">
+            <div id="swiper-button-prev"><i class="fas fa-chevron-left text-white text-5xl"></i></div>
+            <div id="swiper-button-next"><i class="fas fa-chevron-right text-white text-5xl"></i></div>
+        </div>
+    </div>
+    <!--End Slider-->
+
+    <!--Start Key Activation Section-->
+    <section class="p-4 mt-4">
+
+        <div class="text-center w-full flex flex-col justify-center">
+            <p class="font-bold text-2xl">فعالیت‌های کلیدی</p>
+            <div class="flex w-full justify-center my-4">
+                <hr class="w-40 relative line-orange" />
+            </div>
+            <div class="flex flex-row justify-center flex-wrap text-right lg:flex-nowrap">
+                <div class="px-2 py-6 bg-white m-6 w-96 rounded shadow-lg border font-bold flex flex-col">
+                    <div class="px-2">
+                        <h2 class="pb-4 text-lg"><i class="fas fa-microphone"></i>سخنرانی</h2>
+                        <p class="font-bold pb-2" dir="rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                            چاپ.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.لورم ایپسوم متن ساختگی با
+                            تولید سادگی نامفهوم از صنعت چاپ.</p>
+                        <hr class="my-4" />
+                        <ul class="py-6">
+                            <p>: ویژگی‌های دوره</p>
+                            <div class="px-4 mt-2">
+                                <li>لورم ایپسوم <i class="fas fa-check-circle text-green-500"></i></li>
+                                <li>لورم ایپسوم <i class="fas fa-check-circle text-green-500"></i></li>
+                                <li>لورم ایپسوم <i class="fas fa-check-circle text-green-500"></i></li>
+                            </div>
+                        </ul>
+                    </div>
+                    <a href="#" dir="rtl" class="btn-theme-full shadow-theme">اطلاعات بیشتر...</a>
+                </div>
+                <div class="px-2 py-6 bg-white m-6 w-96 rounded shadow-lg border font-bold flex flex-col">
+                    <div class="px-2">
+                        <h2 class="pb-4 text-lg"><i class="fas fa-microphone"></i>سخنرانی</h2>
+                        <p class="font-bold pb-2" dir="rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                            چاپ.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.لورم ایپسوم متن ساختگی با
+                            تولید سادگی نامفهوم از صنعت چاپ.</p>
+                        <hr class="my-4" />
+                        <ul class="py-6">
+                            <p>: ویژگی‌های دوره</p>
+                            <div class="px-4 mt-2">
+                                <li>لورم ایپسوم <i class="fas fa-check-circle text-green-500"></i></li>
+                                <li>لورم ایپسوم <i class="fas fa-check-circle text-green-500"></i></li>
+                                <li>لورم ایپسوم <i class="fas fa-check-circle text-green-500"></i></li>
+                            </div>
+                        </ul>
+                    </div>
+                    <a href="#" dir="rtl" class="btn-theme-full shadow-theme">اطلاعات بیشتر...</a>
+                </div>
+                <div class="px-2 py-6 bg-white m-6 w-96 rounded shadow-lg border font-bold flex flex-col">
+                    <div class="px-2">
+                        <h2 class="pb-4 text-lg"><i class="fas fa-microphone"></i>سخنرانی</h2>
+                        <p class="font-bold pb-2" dir="rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                            چاپ.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.لورم ایپسوم متن ساختگی با
+                            تولید سادگی نامفهوم از صنعت چاپ.</p>
+                        <hr class="my-4" />
+                        <ul class="py-6">
+                            <p>: ویژگی‌های دوره</p>
+                            <div class="px-4 mt-2">
+                                <li>لورم ایپسوم <i class="fas fa-check-circle text-green-500"></i></li>
+                                <li>لورم ایپسوم <i class="fas fa-check-circle text-green-500"></i></li>
+                                <li>لورم ایپسوم <i class="fas fa-check-circle text-green-500"></i></li>
+                            </div>
+                        </ul>
+                    </div>
+                    <a href="#" dir="rtl" class="btn-theme-full shadow-theme">اطلاعات بیشتر...</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <!--End Key Activation Section-->
+
+    <!--Start Hero Section-->
+    <section class="px-2 xl:px-40 py-4 my-24">
+        <div class="flex justify-center items-center flex-wrap md:flex-nowrap" dir="rtl">
+            <img class="h-96 rounded-lg shadow-sm object-cover object-center" src="img/hero-image.jpg" alt="speech">
+            <div class="w-96 md:px-6 py-4">
+                <div class="my-2 mb-4">
+                    <h2 class="my-6 text-xl">درباره ما بدانید</h2>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.لورم ایپسوم متن ساختگی با تولید سادگی
+                        نامفهوم از صنعت چاپ.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.لورم ایپسوم متن
+                        ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                </div>
+                <a href="#" class="btn-theme-normal shadow-theme">بیشتر بدانید</a>
+            </div>
+        </div>
+    </section>
+    <!--End Hero Section-->
+
+    <!--Start Free Products Section-->
+    <section class="my-36" dir="rtl">
+        <h4 class="text-2xl text-center">محصولات رایگان ما</h2>
+            <div class="my-4 flex justify-center">
+                <hr class="w-40 relative line-orange" />
+            </div>
+            <div class="flex justify-center flex-wrap md:flex-nowrap">
+                <div class="bg-gray-100 border w-96 m-4 lg:my-0 rounded-md overflow-hidden shadow">
+                    <a href="#"><img class="w-96 object-cover object-center" src="img/product1.jpg" alt="product"></a>
+                    <div class="p-4 h-16 flex items-center">
+                        <div
+                            class="bg-yellow-500 p-7 h-10 w-10 text-white rounded-full flex items-center relative shadow -mt-16">
+                            <div class="absolute inset-5"><i class="fas fa-dollar-sign"></i><i
+                                    class="-m-4 fas fa-slash"></i></div>
+                        </div>
+                        <a href="#">
+                            <h3 class="font-normal">وبینار لورم ایپسوم</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-gray-100 border w-96 m-4 lg:my-0 rounded-md overflow-hidden shadow">
+                    <a href="#"><img class="w-96 object-cover object-center" src="img/product2.jpg" alt="product"></a>
+                    <div class="p-4 h-16 flex items-center">
+                        <div
+                            class="bg-yellow-500 p-7 h-10 w-10 text-white rounded-full flex items-center relative shadow -mt-16">
+                            <div class="absolute inset-5"><i class="fas fa-dollar-sign"></i><i
+                                    class="-m-4 fas fa-slash"></i></div>
+                        </div>
+                        <a href="#">
+                            <h3 class="font-normal">وبینار لورم ایپسوم</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-gray-100 border w-96 m-4 lg:my-0 rounded-md overflow-hidden shadow">
+                    <a href="#"><img class="w-96 object-cover object-center" src="img/product3.jpg" alt="product"></a>
+                    <div class="p-4 h-16 flex items-center">
+                        <div
+                            class="bg-yellow-500 p-7 h-10 w-10 text-white rounded-full flex items-center relative shadow -mt-16">
+                            <div class="absolute inset-5"><i class="fas fa-dollar-sign"></i><i
+                                    class="-m-4 fas fa-slash"></i></div>
+                        </div>
+                        <a href="#">
+                            <h3 class="font-normal">وبینار لورم ایپسوم</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--End Free Products Section-->
+
+    <!--Start Our Subs Section-->
+    <section class="bg-blue-900 mb-20 flex flex-col pb-4 pt-5 items-center justify-center">
+        <div>
+            <h2 class="text-white text-3xl">پیشینه ما</h2>
+        </div>
+        <div class="flex items-center mx-0 w-full h-auto md:h-72">
+            <div class="text-white flex flex-col md:flex-row justify-center items-center w-full">
+                <div class="mx-12 my-4 md:my-0">
+                    <i class="text-9xl fas fa-graduation-cap"></i>
+                    <div class="font-light my-1">
+                        <h3 class="text-center text-3xl">لورم ایپسوم</h3>
+                    </div>
+                </div>
+                <div class="hidden lg:block bg-white h-40 w-1 rounded mx-8"></div>
+                <div class="mx-12 my-4 md:my-0 text-yellow-500">
+                    <i class="text-9xl fas fa-users"></i>
+                    <div class="font-light my-1">
+                        <h3 class="text-center text-3xl">لورم ایپسوم</h3>
+                    </div>
+                </div>
+                <div class="hidden lg:block bg-white h-40 w-1 rounded mx-8"></div>
+                <div class="mx-12 my-4 md:my-0 flex flex-col items-center">
+                    <i class="text-9xl fas fa-clipboard-list"></i>
+                    <div class="font-light my-2">
+                        <h3 class="text-center text-3xl">لورم ایپسوم</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Our Subs Section-->
+
+    <!--Start Our Best Customers Section-->
+    <section>
+        <div class="text-center">
+            <h3 class="text-2xl">بهترین ها به ما اعتماد کرده اند</h3>
+            <div class="flex w-full justify-center my-4">
+                <hr class="w-40 relative line-orange" />
+            </div>
+            <div class="flex w-full justify-center flex-wrap md:flex-nowrap">
+                <div><img class="w-40 shadow-lg border m-2" src="img/brand1.png"></div>
+                <div><img class="w-40 shadow-lg border m-2" src="img/brand2.jpg"></div>
+                <div><img class="w-40 shadow-lg border m-2" src="img/brand3.jpg"></div>
+                <div><img class="w-40 shadow-lg border m-2" src="img/brand4.jpg"></div>
+                <div><img class="w-40 shadow-lg border m-2" src="img/brand5.png"></div>
+            </div>
+        </div>
+    </section>
+    <!--End Our Best Customers Section-->
+
+    <!--Start Products Section-->
+    <section class="mt-36 mb-20" dir="rtl">
+        <h4 class="text-2xl text-center">جدیدترین محصولات</h2>
+            <div class="my-4 flex justify-center">
+                <hr class="w-40 relative line-orange" />
+            </div>
+            <div class="flex justify-center flex-wrap md:flex-nowrap">
+                <div class="bg-gray-100 border w-96 m-4 lg:my-0 rounded-md overflow-hidden shadow">
+                    <a href="#"><img class="w-96 object-cover object-center" src="img/product1.jpg" alt="product"></a>
+                    <div class="p-4 h-16 flex items-center">
+                        <div
+                            class="bg-yellow-500 p-7 h-10 w-10 text-white rounded-full flex items-center relative shadow -mt-16">
+                            <div class="absolute inset-5"><i class="fas fa-dollar-sign"></i><i
+                                    class="-m-4 fas fa-slash"></i></div>
+                        </div>
+                        <a href="#">
+                            <h3 class="font-normal">وبینار لورم ایپسوم</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-gray-100 border w-96 m-4 lg:my-0 rounded-md overflow-hidden shadow">
+                    <a href="#"><img class="w-96 object-cover object-center" src="img/product4.jpg" alt="product"></a>
+                    <div class="p-4 h-16 flex items-center">
+                        <!--<div class="bg-yellow-500 p-7 h-10 w-10 text-white rounded-full flex items-center relative shadow -mt-16"><div class="absolute inset-5"><i class="fas fa-dollar-sign"></i><i class="-m-4 fas fa-slash"></i></div></div>-->
+                        <a href="#">
+                            <h3 class="font-normal">وبینار لورم ایپسوم</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-gray-100 border w-96 m-4 lg:my-0 rounded-md overflow-hidden shadow">
+                    <a href="#"><img class="w-96 object-cover object-center" src="img/product3.jpg" alt="product"></a>
+                    <div class="p-4 h-16 flex items-center">
+                        <div
+                            class="bg-yellow-500 p-7 h-10 w-10 text-white rounded-full flex items-center relative shadow -mt-16">
+                            <div class="absolute inset-5"><i class="fas fa-dollar-sign"></i><i
+                                    class="-m-4 fas fa-slash"></i></div>
+                        </div>
+                        <a href="#">
+                            <h3 class="font-normal">وبینار لورم ایپسوم</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center md:justify-end md:px-16 w-full">
+                <a href="#" class="btn-theme-normal shadow-theme">همه‌ی محصولات</a>
+            </div>
+    </section>
+    <!--End Products Section-->
+
+    <!--Start Our Story Slider-->
+    <section class="flex w-full justify-center p-slider mb-20">
+        <div class="w-full">
+            <div class="w-full text-center mb-4">
+                <p class="font-bold text-2xl">داستان اعضای کلیدی ما</p>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img class="w-full rounded-lg object-cover object-center"
+                            src="img/slide 1.png" alt="slide"></div>
+                    <div class="swiper-slide"><img class="w-full rounded-lg object-cover object-center"
+                            src="img/slide 2.png" alt="slide"></div>
+                    <div class="swiper-slide"><img class="w-full rounded-lg object-cover object-center"
+                            src="img/slide 3.png" alt="slide"></div>
+                </div>
+                <div class="swiper-pagination text-white"></div>
+                <div class="absolute top-20 md:top-60 z-50 w-full flex justify-between items-center px-5">
+                    <div id="swiper-button-prev"><i class="fas fa-chevron-left text-white text-xl md:text-5xl"></i>
+                    </div>
+                    <div id="swiper-button-next"><i class="fas fa-chevron-right text-white text-xl md:text-5xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Slider-->
+
+    <!--Start Footer Section-->
+
+    <section>
+        <!--Start First Section Of Footer-->
+
+        <div class="bg-gray-300 p-12 flex flex-wrap md:flex-nowrap" dir="rtl">
+            <div class="w-96 mx-2 my-4 md:my-0">
+                <img class="h-10 mt-2 mb-4" src="img/Logo.jpg" alt="Lorem Ipsum">
+                <p dir="rtl">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.لورم ایپسوم متن ساختگی با تولید سادگی
+                    نامفهوم از صنعت چاپ.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.
+                </p>
+            </div>
+            <div class="w-96 mx-2 my-4 md:my-0">
+                <p class="text-3xl font-normal">لورم ایپسوم</p>
+                <ul class="mt-3 mr-3">
+                    <a href="#" class="text-md w-full">
+                        <li class="text-blue-900 px-2 py-1 w-full rounded hover:bg-gray-200">لورم ایپسوم متن ساختگی</li>
+                    </a>
+                    <a href="#" class="text-md w-full">
+                        <li class="text-blue-900 px-2 py-1 w-full rounded hover:bg-gray-200">لورم ایپسوم متن ساختگی</li>
+                    </a>
+                    <a href="#" class="text-md w-full">
+                        <li class="text-blue-900 px-2 py-1 w-full rounded hover:bg-gray-200">لورم ایپسوم متن ساختگی</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="w-96 mx-2 my-4 md:my-0">
+                <p class="text-3xl font-normal">لورم ایپسوم</p>
+                <ul class="mt-3 mr-3">
+                    <a href="#" class="text-md w-full">
+                        <li class="text-blue-900 px-2 py-1 w-full rounded hover:bg-gray-200">لورم ایپسوم متن ساختگی</li>
+                    </a>
+                    <a href="#" class="text-md w-full">
+                        <li class="text-blue-900 px-2 py-1 w-full rounded hover:bg-gray-200">لورم ایپسوم متن ساختگی</li>
+                    </a>
+                    <a href="#" class="text-md w-full">
+                        <li class="text-blue-900 px-2 py-1 w-full rounded hover:bg-gray-200">لورم ایپسوم متن ساختگی</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <!--End First Section Of Footer-->
+
+        <!--Start Last Section Of Footer-->
+
+        <div class="bg-blue-900 h-auto w-full text-white p-8">
+            <div class="flex justify-around flex-row-reverse flex-wrap">
+                <div>
+                    <div class="w-96">
+                        <div class="flex items-center m-4 w-96" dir="rtl">
+                            <p class="ml-6"><i class="fas fa-map-marker-alt text-xl p-2 bg-blue-800 rounded-md"></i></p>
+                            <p>
+                                لورم ایپسوم, لورم ایپسوم, لورم ایپسوم, لورم ایپسوم
+                                لورم ایپسوم, لورم ایپسوم, لورم.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-96">
+                        <div class="flex items-center m-4 w-96" dir="rtl">
+                            <p class="ml-6"><i class="fas fa-phone text-xl p-2 bg-blue-800 rounded-md"></i></p>
+                            <p>
+                                لورم ایپسوم, لورم ایپسوم, لورم ایپسوم, لورم ایپسوم
+                                لورم ایپسوم, لورم ایپسوم, لورم.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-96">
+                        <div class="flex items-center m-4 w-96" dir="rtl">
+                            <p class="ml-6"><i class="far fa-envelope text-xl p-2 bg-blue-800 rounded-md"></i></p>
+                            <p>
+                                لورم ایپسوم, لورم ایپسوم, لورم ایپسوم, لورم ایپسوم
+                                لورم ایپسوم, لورم ایپسوم, لورم.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center text-4xl w-96" dir="rtl">
+                    <div>
+                        <p class="text-xl m-3">ما را دنبال کنید...</p>
+                        <div>
+                            <a href="#">
+                                <p class="fab fa-instagram mx-2 p-2 bg-blue-800 rounded-md"></p>
+                            </a>
+                            <a href="#">
+                                <p class="fab fa-twitter mx-2 p-2 bg-blue-800 rounded-md"></p>
+                            </a>
+                            <a href="#">
+                                <p class="fab fa-facebook mx-2 p-2 bg-blue-800 rounded-md"></p>
+                            </a>
+                            <a href="#">
+                                <p class="fab fa-linkedin mx-2 p-2 bg-blue-800 rounded-md"></p>
+                            </a>
+                            <a href="#">
+                                <p class="fab fa-telegram mx-2 p-2 bg-blue-800 rounded-md"></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full flex justify-center mt-5">
+                <div class="text-center">
+                    <a href="#"><img class="rounded-md h-40" src="img/Electronic-Certification.png" alt="E-namad"></a>
+                </div>
+            </div>
+        </div>
+
+        <!--End Last Section Of Footer-->
+    </section>
+
+    <!--End Footer Section-->
+
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/app.js"></script>
+
+</html>

@@ -1,0 +1,24 @@
+:root {
+    --shadow-orange: 1px 1px 10px orange;
+}
+*:focus {
+    outline: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+.shadow-theme {
+    box-shadow: var(--shadow-orange);
+}
+.p-slider {
+    padding: 0px 100px;
+}
+.line-orange {
+    border-bottom: solid 1px rgb(245, 158, 11);
+    box-shadow: var(--shadow-orange);
+}
+@media (max-width: 720px) {
+    .p-slider {
+        padding: 0px 0px;
+    }
+}
