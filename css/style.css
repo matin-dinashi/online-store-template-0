@@ -22,3 +22,7 @@ html {
         padding: 0px 0px;
     }
 }
+.select-box{
+    border-top-left-radius:none ;
+    border-bottom-left-radius:none ;
+}
